@@ -4,6 +4,11 @@ public class Person {
     private String name;
     private int age;
 
+    public Person(String name,int age){
+        this.name=name;
+        this.age=age;
+    }
+
     public void tell(){
         System.out.println("my name is:" + name + "aged "+ age);
     }
@@ -24,5 +29,13 @@ public class Person {
         return age;
     }
 
+    public void main(String [] args){
+        Person mzp = new Person("闵志鹏",20);
+        mzp.tell();
+
+    }
+
 }
+
+
 
